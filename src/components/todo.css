@@ -28,6 +28,12 @@
 .showItems {
   margin-top: 20px;
 }
+.showItems2 {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  align-items: center;
+}
 
 .eachItems {
   display: flex;
@@ -54,6 +60,7 @@
   overflow: hidden;
   position: relative;
   transition: color 0.3s;
+  align-items: center;
 }
 
 .effect04:after {
@@ -76,4 +83,20 @@
 .effect04:hover:after {
   width: 0;
   height: 0;
+}
+
+
+@media only screen and (max-width: 768px) {
+  .main-div {
+    width: 80%; 
+  }
+
+  .addItems {
+    flex-direction: column; 
+  }
+
+  .addItems input {
+    margin-bottom: 10px; 
+    width: 100%; 
+  }
 }
