@@ -1,56 +1,30 @@
 /* todo.css */
 
 .main-div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  flex-direction: column;
-  gap: 10px;
-  background-color: rgb(191, 207, 202);
+  width: 60%;
+  margin: 20px auto;
+  border: 2px solid #ccc;
+  padding: 20px;
+  border-radius: 5px;
 }
 
 .child-div {
-  
-  background-color: #f0f0f0;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  width: 400px;
-  max-width: 90%;
-}
-
-h2 {
-  text-align: center;
-  margin-bottom: 20px;
-  font-size: 24px;
-  color: #333;
+  display: flex;
+  flex-direction: column;
 }
 
 .addItems {
   display: flex;
   align-items: center;
-  margin-bottom: 20px;
 }
 
-input[type="text"] {
-  flex: 1;
+.addItems input {
   padding: 10px;
+  font-size: 16px;
   border: 1px solid #ccc;
   border-radius: 5px;
-  font-size: 16px;
-}
-
-.btn {
-  cursor: pointer;
-  padding: 10px 20px;
-  border-radius: 5px;
-  border: none;
-  color: #fff;
-}
-
-.btn-success {
-  background-color: #5cb85c; /* Green color for the button */
+  flex: 1;
+  margin-right: 10px;
 }
 
 .showItems {
@@ -58,34 +32,50 @@ input[type="text"] {
 }
 
 .eachItems {
-  background-color: #fff;
-  padding: 15px;
-  border-radius: 5px;
-  margin-bottom: 10px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
 }
 
 .eachItems h3 {
   margin: 0;
-  color: #333;
+  flex: 1;
+  cursor: pointer;
 }
 
-.add-button {
+.eachItems i {
   cursor: pointer;
-  color: #dc3545; /* Red color for the trash icon */
+  margin-left: 10px;
 }
 
 .effect04 {
-  /* Style for the "Check List" button */
-  cursor: pointer;
+  display: inline-block;
+  border: 2px solid transparent;
   padding: 10px 20px;
-  border-radius: 5px;
-  border: none;
-  background-color: #007bff; /* Blue color for the button */
-  color: #fff;
-  transition: background-color 0.3s ease;
+  overflow: hidden;
+  position: relative;
+  transition: color 0.3s;
+}
+
+.effect04:after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  background-color: #f39c12;
+  transition: width 0.3s, height 0.3s;
 }
 
 .effect04:hover {
-  background-color: #0056b3; /* Darker blue color on hover */
+  color: #f39c12;
+}
+
+.effect04:hover:after {
+  width: 0;
+  height: 0;
 }

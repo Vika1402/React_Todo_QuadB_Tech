@@ -20,7 +20,7 @@ const Todo = () => {
        
         <button type="button" class="btn btn-success" onClick={()=> dispatch(addTodo(inputData),
           setInputData('')
-        )} >Add Todo</button>
+        )} >ADD TODO</button>
       </div>
       <div className="showItems">
       {
