@@ -1,0 +1,91 @@
+/* todo.css */
+
+.main-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  gap: 10px;
+  background-color: rgb(191, 207, 202);
+}
+
+.child-div {
+  
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 400px;
+  max-width: 90%;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+.addItems {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.btn {
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+}
+
+.btn-success {
+  background-color: #5cb85c; /* Green color for the button */
+}
+
+.showItems {
+  margin-top: 20px;
+}
+
+.eachItems {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.eachItems h3 {
+  margin: 0;
+  color: #333;
+}
+
+.add-button {
+  cursor: pointer;
+  color: #dc3545; /* Red color for the trash icon */
+}
+
+.effect04 {
+  /* Style for the "Check List" button */
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  background-color: #007bff; /* Blue color for the button */
+  color: #fff;
+  transition: background-color 0.3s ease;
+}
+
+.effect04:hover {
+  background-color: #0056b3; /* Darker blue color on hover */
+}
